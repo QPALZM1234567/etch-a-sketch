@@ -2,12 +2,23 @@ html, body{
     margin: 0px;
 }
 
+h1{
+    margin-top: 0;
+}
+
 .center{
     height:100vh;
-    background-color: black;
+    background-color: white;
     display:flex;
+    flex-direction: column;
+    gap: 2%;
     justify-content: center;
     align-items: center;
+}
+
+button{
+    background-color: red;
+    color: white;
 }
 
 .container{
@@ -19,13 +30,14 @@ html, body{
 }
 
 .square{
-    width: 6.25%;
-    height: 6.25%;
-    background-color: aqua;
+    width: 5.9%;
+    height: 5.9%;
+    background-color: lightgray;
+    border:0.5px solid black;
 }
 
 .hovered{
-    background-color: white;
+    background-color: black;
 }
 
 
