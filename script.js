@@ -1,3 +1,11 @@
+//Get Size of Board
+let side = 0;
+const size = document.querySelector(".input");
+size.addEventListener('click', () => {
+    side = parseInt(prompt("What side length would you like? Limit of 100"));
+    document.querySelector("h3").textContent = side + "x" + side;
+});
+
 //Add squares to board
 const container = document.querySelector(".container");
 for (let i = 0; i < 256; i++) {
@@ -18,7 +26,7 @@ clear.addEventListener('click', () => {
    for (child of document.querySelectorAll(".hovered")) {
     child.classList.remove("hovered");
    }
-})
+});
 
 
 //Create Functionality for board

@@ -2,8 +2,9 @@ html, body{
     margin: 0px;
 }
 
-h1{
+h1, h3{
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .center{
@@ -30,10 +31,9 @@ button{
 }
 
 .square{
-    width: 5.9%;
-    height: 5.9%;
+    width: 6.25%;
+    height: 6.25%;
     background-color: lightgray;
-    border:0.5px solid black;
 }
 
 .hovered{
