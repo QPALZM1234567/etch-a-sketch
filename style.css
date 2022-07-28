@@ -1,0 +1,31 @@
+html, body{
+    margin: 0px;
+}
+
+.center{
+    height:100vh;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 6.25%;
+    height: 6.25%;
+    background-color: aqua;
+}
+
+.hovered{
+    background-color: white;
+}
+
+
