@@ -8,7 +8,6 @@ for (let i = 0; i < 256; i++) {
 
 
 function hovered(event) {
-    setTimeout
     event.target.classList.add("hovered");
 }
 const squares = document.querySelectorAll(".square");
@@ -16,6 +15,9 @@ const squares = document.querySelectorAll(".square");
 squares.forEach(item => {
     item.addEventListener('mouseover', hovered);
     item.addEventListener('mouseout', (e) =>{
-        e.target.classList.remove("hovered");
+        setTimeout(() => {
+            e.target.classList.remove("hovered");
+        }, 300)
+        
     });
 })
