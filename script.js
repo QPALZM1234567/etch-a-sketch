@@ -28,10 +28,19 @@ clear.addEventListener('click', () => {
    }
 });
 
+let mouseDown = false;
+document.body.onmousedown = (e) => {
+    mouseDown = true;
+    e.preventDefault();
+}
+
+document.body.onmouseup = () => (mouseDown = false)
 
 //Create Functionality for board
 function hovered(event) {
-    event.target.classList.add("hovered");
+    if (mouseDown) {
+        event.target.classList.add("hovered");
+    }
 }
 const squares = document.querySelectorAll(".square");
 
