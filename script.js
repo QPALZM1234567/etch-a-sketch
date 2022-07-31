@@ -4,6 +4,9 @@ const size = document.querySelector(".input");
 size.addEventListener('click', () => {
     let temp = side;
     side = parseInt(prompt("What side length would you like? Limit of 100"));
+    if (side > 100) {
+        side = 100;
+    }
     document.querySelector("h3").textContent = side + "x" + side;
     for (let i = 0; i < temp**2; i++) {
         container.removeChild(container.lastChild);
