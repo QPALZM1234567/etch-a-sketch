@@ -38,7 +38,7 @@ document.body.onmouseup = () => (mouseDown = false)
 
 //Create Functionality for board
 function hovered(event) {
-    if (mouseDown) {
+    if (mouseDown || event.type === 'mousedown') {
         event.target.classList.add("hovered");
     }
 }
@@ -46,6 +46,7 @@ const squares = document.querySelectorAll(".square");
 
 squares.forEach(item => {
     item.addEventListener('mouseover', hovered);
+    item.addEventListener('mousedown', hovered);
     /*
     item.addEventListener('mouseout', (e) =>{
         setTimeout(() => {
